@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/rv_playersList"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      tools:context="es.sooft.pidetaxi.modules.favourites.list.FavouritesListActivity"
+      tools:listitem="@layout/item_score_card"
+      tools:showIn="@layout/activity_main"
+      />
+
+
+  <ProgressBar
+      android:id="@+id/pb_emptyList"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="12dp"
+      android:indeterminate="true"
+      android:visibility="gone"
+      style="?android:attr/progressBarStyle"
+      />
+</FrameLayout>
